@@ -1,5 +1,8 @@
 {
     "private": true,
+    "optionalDependencies": {
+        "fsevents": "^2.0.7"
+    },
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
@@ -23,8 +26,6 @@
     },
     "engines": {
         "node": "14.x"
-    },
-    "optionalDependencies": {
-        "fsevents": "^2.0.7"
     }
+
 }
