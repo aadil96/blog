@@ -15,16 +15,15 @@
     "devDependencies": {
         "autoprefixer": "^10.2.5",
         "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.2.8",
         "tailwindcss": "^2.0.4"
     },
     "dependencies": {
-        "@tailwindcss/typography": "^0.4.0"
+        "@tailwindcss/typography": "^0.4.0",
+        "laravel-mix": "^6.0.13"
     },
     "engines": {
         "node": "14.x"
     }
-
 }
