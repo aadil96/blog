@@ -15,7 +15,7 @@ class BlogController extends Controller
             ->orderBy('publish_date', 'DESC');
         // ->simplePaginate(12);
 
-        $tags = WinkTag::limit(3)->pluck('name')->toArray();
+        // $tags = WinkTag::limit(3)->pluck('name')->toArray();
 
         if ( request()->has('tag') ) {
             $posts = WinkTag::where('name', request('tag'))
@@ -29,7 +29,7 @@ class BlogController extends Controller
 
 //        $featured = $posts->where('featured_image', '!==', null)->first();
 
-        return view('index', compact('posts', 'tags'));
+        return view('index', compact('posts'));
     }
 
     public function show($slug)
