@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "aadil/blog",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "My personal blog.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
@@ -14,11 +14,13 @@
         "themsaid/wink": "^1.2"
     },
     "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
+        "nunomaduro/phpinsights": "^1.14",
         "phpunit/phpunit": "^9.3.3"
     },
     "autoload": {

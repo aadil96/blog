@@ -13,23 +13,16 @@ class BlogController extends Controller
         $posts = WinkPost::with('tags')
             ->live()
             ->orderBy('publish_date', 'DESC');
-        // ->simplePaginate(12);
 
-        $tags = WinkTag::limit(3)->pluck('name')->toArray();
+        // $tags = WinkTag::limit(3)->pluck('name')->toArray();
 
-        if ( request()->has('tag') ) {
-            $posts = WinkTag::where('name', request('tag'))
-                ->first()
-                ->posts()
-                ->live()
-                ->orderBy('publish_date', 'DESC');
+        if (request()->has('tag')) {
+            $posts = $this->filterByTag(request('tag'));
         }
 
         $posts = $posts->simplePaginate(15);
 
-//        $featured = $posts->where('featured_image', '!==', null)->first();
-
-        return view('index', compact('posts', 'tags'));
+        return view('index', compact('posts'));
     }
 
     public function show($slug)
@@ -40,5 +33,14 @@ class BlogController extends Controller
             ->firstOrFail();
         $tags = WinkTag::limit(3)->pluck('name')->toArray();
         return view('show', compact('post', 'tags'));
+    }
+
+    protected function filterByTag($tag)
+    {
+        return WinkTag::where('name', $tag)
+            ->first()
+            ->posts()
+            ->live()
+            ->orderBy('publish_date', 'DESC');
     }
 }

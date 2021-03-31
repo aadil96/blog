@@ -13,7 +13,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
     }
 
     /**
@@ -23,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if($this->app->environment('production') || $this->app->environment('staging')) {
+        if ($this->app->environment('production') || $this->app->environment('staging')) {
             \URL::forceScheme('https');
         }
     }
