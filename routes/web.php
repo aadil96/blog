@@ -19,6 +19,5 @@ Route::group(['domain' => config('wink.domain')], function () {
     });
 });
 
-
-Route::get('/', [\App\Http\Controllers\BlogController::class, 'index'])->name('blog.index');
-Route::get('post/{slug}', [\App\Http\Controllers\BlogController::class, 'show'])->name('blog.show');
+Route::get('/', [BlogController::class, 'index'])->name('blog.index');
+Route::get('post/{slug}', [BlogController::class, 'show'])->name('blog.show');
