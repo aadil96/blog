@@ -19,7 +19,7 @@ class BlogController extends Controller
             $posts = $this->filterByTag(request('tag'));
         }
 
-        $posts = $posts->simplePaginate(15);
+        $posts = $posts->simplePaginate(5);
 
         return view('index', compact('posts'));
     }
