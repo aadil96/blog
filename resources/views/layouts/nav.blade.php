@@ -4,7 +4,7 @@
 
         <nav>
             <ul class="flex items-center justify-between font-bold text-lg text-white uppercase no-underline">
-                <li><a class="hover:text-gray-200 hover:underline px-4" href="#">Larence</a></li>
+                <li><a class="hover:text-gray-200 hover:underline px-4" href="{{ route('blog.index') }}">Larence</a></li>
             </ul>
         </nav>
 
@@ -12,13 +12,13 @@
             <a class="" href="#">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a class="pl-6" href="#">
+            <a class="pl-6" href="https://instagram.com/aadil.dev39">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a class="pl-6" href="#">
+            <a class="pl-6" href="https://twitter.com/agwan_aadil">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a class="pl-6" href="#">
+            <a class="pl-6" href="https://linkedin.com/mwlite/in/aadil-agwan-0b80a91a6">
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
