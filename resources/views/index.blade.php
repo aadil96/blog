@@ -6,7 +6,7 @@
     <section class="w-full md:w-2/3 flex flex-col items-center px-3">
 
         @forelse($posts as $post)
-            <article class="flex flex-col shadow my-4">
+            <article class="flex flex-col shadow lg:w-full my-4">
                 <!-- Article Image -->
                 <a href="{{ route('blog.show', $post->slug) }}" class="hover:opacity-75">
                     <img src="{{ asset( $post->featured_image ) }}" alt="{{ $post->featured_image_caption }}">
