@@ -9,9 +9,9 @@
         </nav>
 
         <div class="flex items-center text-lg no-underline text-white pr-6">
-            <a class="" href="#">
+            {{-- <a class="" href="#">
                 <i class="fab fa-facebook"></i>
-            </a>
+            </a> --}}
             <a class="pl-6" href="https://instagram.com/aadil.dev39">
                 <i class="fab fa-instagram"></i>
             </a>
