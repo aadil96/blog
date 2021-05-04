@@ -8,7 +8,7 @@
     <meta name="description" content="Laravel updates and tips">
 
     <!-- Tailwind -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
